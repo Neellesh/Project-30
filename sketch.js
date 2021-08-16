@@ -11,7 +11,7 @@ var wall1 , wall2 , ground ;
 var stones = [];
 var jointpoint ;
 var zombie , zombie1 , zombie2 , zombie3 , zombie4 ;
-var backImg , breakButton ;
+var backImg , breakButton  ;
 
 function preload(){
   zombie1 = loadImage("./assets/zombie1.png");
@@ -42,7 +42,7 @@ function setup() {
   zombie.velocityX = 10;
 
   breakButton = createButton("")
-  breakButton.position(width-200,height/2 - 50);
+  breakButton.position(width-100,height/2 - 50);
   breakButton.class("breakButton");
   breakButton.mousePressed(handleButtonPress)
 
