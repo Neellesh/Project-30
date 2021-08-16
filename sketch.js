@@ -33,7 +33,7 @@ function setup() {
   wall2 = new Base(width-100,height/2-100,225,100);                 
   jointpoint = new Base(width-225, height/2-100, 40, 20);          
 
-  bridge = new Bridge(17,{ x: 100, y: height / 2 -100}); 
+  bridge = new Bridge(17,{ x: 115, y: height / 2 -100}); 
   
   zombie = createSprite(width/2,height-110);
   zombie.addAnimation("lefttoright",zombie1,zombie2,zombie1);
