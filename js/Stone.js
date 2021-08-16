@@ -7,6 +7,7 @@ class Stone {
       this.r = 30;
       this.width = width;
       this.height = height;
+      this.image = loadImage("./assets/stone.png");
       this.body = Bodies.circle(x, y, this.r, options);
       World.add(world, this.body); 
    }
@@ -16,8 +17,8 @@ class Stone {
       var pos = this.body.position
 
       push();
-      ellipseMode(RADIUS);
-      ellipse(pos.x,pos.y,this.r)
+      imageMode(CENTER);
+      image(this.image, 0, 0, this.r);
       pop();
    }
 }
