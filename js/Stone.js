@@ -18,7 +18,7 @@ class Stone {
 
       push();
       imageMode(CENTER);
-      image(this.image,0 , 0, 1 , 1);
+      image(this.image,pos.x ,pos.y, 1 , 1);
       pop();
    }
 }
